@@ -6,14 +6,14 @@ defmodule CloudIServiceValidateConfig do
 
   def project do
     [app: :cloudi_service_validate_config,
-     version: "2.0.6",
+     version: "2.0.7",
      language: :erlang,
      erlc_options: [
        :deterministic,
        :debug_info,
        :warn_export_vars,
        :warn_unused_import,
-       :warn_missing_spec,
+       #:warn_missing_spec,
        :warnings_as_errors],
      description: description(),
      package: package(),
@@ -21,7 +21,7 @@ defmodule CloudIServiceValidateConfig do
   end
 
   defp deps do
-    [{:cloudi_core, ">= 2.0.6"}]
+    [{:cloudi_core, ">= 2.0.7"}]
   end
 
   defp description do
